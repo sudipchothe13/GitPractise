@@ -12,6 +12,7 @@ public class Expense {
 	
 	public static void removeExpense() {
 		System.out.println("Expense removed");
+		System.out.println("Travel expense removed");
 	}
 
 }
