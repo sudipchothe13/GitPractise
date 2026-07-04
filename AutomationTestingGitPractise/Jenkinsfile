@@ -1,11 +1,17 @@
 pipeline {
     agent any
 
+    parameters {
+        string(name: 'BRANCH', defaultValue: 'develop', description: 'Git branch')
+        string(name: 'TAG', defaultValue: 'Regression', description: 'TestNG group/tag')
+    }
+
     stages {
 
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: "${params.BRANCH}",
+                    url: 'https://github.com/sudipchothe13/GitPractise.git'
             }
         }
 
