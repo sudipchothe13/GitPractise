@@ -6,7 +6,7 @@ public class Demo1 {
 
 	
 	
-	@Test (groups = {"Regression", "SendRequest"})
+	@Test (groups = {"@Regression", "@SendRequest"})
 	public void demo() {
 		System.out.println("Git practise");
 	}
