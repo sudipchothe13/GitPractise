@@ -9,7 +9,7 @@ public class Demo1 {
 		System.out.println("Git practise with Sudip Chothe");
 	}
 	
-	@Test
+	@Test (groups = {"Regression", "SendRequest"})
 	public void demo() {
 		System.out.println("Git practise");
 	}
